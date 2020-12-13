@@ -5,6 +5,7 @@
 - Added ThemeInterface
 
 # To be added
+- Pre-built UI for everyone
 - Settings through registry
 - Auto Execute
 - Auto Attach (ProcessWatcher included)
