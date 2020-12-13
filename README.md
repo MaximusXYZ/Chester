@@ -3,6 +3,7 @@
 
 # Changelogs
 - Added ThemeInterface
+- Added Resizable Window
 
 # To be added
 - Pre-built UI for everyone
