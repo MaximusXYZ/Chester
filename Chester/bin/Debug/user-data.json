@@ -1,0 +1,11 @@
+{
+  "MainWindow": {
+    "Title": "Chester - MainWindow",
+    "Background": {
+      "Background": "#FF141414",
+      "BorderBrush": "#FFFFFF00",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    }
+  }
+}

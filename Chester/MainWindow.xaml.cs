@@ -39,6 +39,8 @@ namespace Chester
                     else { Clipboard.SetText(ex.ToString()); Environment.Exit(0); }
                 }
             }
+
+            if (!Settings.Instance.TopMost) this.Topmost = false;
         }
     }
 }
