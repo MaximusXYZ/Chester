@@ -4,6 +4,12 @@
 # Changelogs
 - Added ThemeInterface
 
+# To be added
+- Settings through registry
+- Auto Execute
+- Auto Attach (ProcessWatcher included)
+- Etc...
+
 # Setting up the solution
 - Quickly download the source code.
 - Open the solution by double clicking "Chester.sln" or "Chester.csproj"
