@@ -4,6 +4,7 @@
 # Changelogs
 - Added ThemeInterface
 - Added Resizable Window
+- Added Registry
 
 # To be added
 - Pre-built UI for everyone
