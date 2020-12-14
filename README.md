@@ -8,7 +8,7 @@
 
 # To be added
 - Pre-built UI for everyone
-- Settings through registry
+- Multi API
 - Auto Execute
 - Auto Attach (ProcessWatcher included)
 - Etc...
