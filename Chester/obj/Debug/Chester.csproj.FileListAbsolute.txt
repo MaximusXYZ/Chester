@@ -34,3 +34,6 @@ C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\obj\Debug\Chester.cspro
 C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\obj\Debug\Chester.csproj.CopyComplete
 C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\obj\Debug\Chester.exe
 C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\obj\Debug\Chester.pdb
+C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\ambus\OneDrive\Documents\GitHub\Chester\Chester\obj\Debug\App.baml

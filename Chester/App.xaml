@@ -4,6 +4,108 @@
              xmlns:local="clr-namespace:Chester"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style
+             TargetType="{x:Type Button}"
+             x:Key="MacButton">
+            <Setter
+                Property="FocusVisualStyle"
+                Value="{x:Null}"/>
+            <Setter
+                Property="Template">
+                <Setter.Value>
+                    <ControlTemplate
+                        TargetType="{x:Type Button}">
+                        <Border
+                            Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="15">
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger
+                                Property="IsMouseOver"
+                                Value="True">
+                                <Setter
+                                    Property="RenderTransformOrigin"
+                                    Value="0.5, 0.5"/>
+                                <Setter
+                                    Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform
+                                            ScaleX="1.2"
+                                            ScaleY="1.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style
+            TargetType="{x:Type Button}"
+            x:Key="Button">
+            <Setter
+                Property="FocusVisualStyle"
+                Value="{x:Null}"/>
+            <Setter
+                Property="FontSize"
+                Value="14"/>
+            <Setter
+                Property="Foreground"
+                Value="#C8C8C8"/>
+            <Setter
+                Property="Template">
+                <Setter.Value>
+                    <ControlTemplate
+                        TargetType="{x:Type Button}">
+                        <Border
+                            Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5">
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger
+                                Property="IsMouseOver"
+                                Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                To="White" 
+                                                Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                                                FillBehavior="HoldEnd"
+                                                Duration="0:0:0.25"
+                                                AutoReverse="False"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation
+                                                To="#C8C8C8" 
+                                                Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                                                FillBehavior="HoldEnd"
+                                                Duration="0:0:0.25"
+                                                AutoReverse="False"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

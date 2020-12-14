@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
         xmlns:local="clr-namespace:Chester"
         mc:Ignorable="d"
         Title="Chester - MainWindow"
@@ -28,12 +29,166 @@
         <Grid>
             <Border
                 x:Name="Background"
-                Background="#141414"
+                Background="#181818"
                 BorderBrush="Transparent"
                 BorderThickness="0"
                 CornerRadius="5"
                 Margin="0">
-                
+                <Grid>
+                    <Border
+                        x:Name="Top"
+                        Background="#161616"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        CornerRadius="5,5,0,0"
+                        VerticalAlignment="Top"
+                        Height="30"
+                        Width="Auto">
+                        <Grid>
+                            <Button
+                                x:Name="ExitBtn"
+                                Height="10"
+                                Width="10"
+                                Background="#FF605C"
+                                BorderBrush="Transparent"
+                                BorderThickness="0"
+                                Style="{StaticResource MacButton}"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="8,0,0,0"/>
+                            <Button
+                                x:Name="MinimizeBtn"
+                                Height="10"
+                                Width="10"
+                                Background="#FFBD44"
+                                BorderBrush="Transparent"
+                                BorderThickness="0"
+                                Style="{StaticResource MacButton}"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="24,0,0,0"/>
+                            <Button
+                                x:Name="MaximizeBtn"
+                                Height="10"
+                                Width="10"
+                                Background="#00CA4E"
+                                BorderBrush="Transparent"
+                                BorderThickness="0"
+                                Style="{StaticResource MacButton}"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="42,0,0,0"/>
+                        </Grid>
+                    </Border>
+                    <Grid
+                        Margin="0,30,0,0">
+                        <Button
+                            x:Name="ExecuteBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE768;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="5"
+                            Style="{StaticResource Button}"/>
+                        <Button
+                            x:Name="ClearBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE75C;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="5,35,5,5"
+                            Style="{StaticResource Button}"/>
+                        <Button
+                            x:Name="OpenBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xED25;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="5,65,5,5"
+                            Style="{StaticResource Button}"/>
+                        <Button
+                            x:Name="SaveBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE896;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="5,95,5,5"
+                            Style="{StaticResource Button}"/>
+                        <Button
+                            x:Name="AttachBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE8FB;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Margin="5,5,5,5"
+                            Style="{StaticResource Button}"/>
+                        <Button
+                            x:Name="SettingsBtn"
+                            Height="30"
+                            Width="30"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            FontSize="13"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE713;"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Margin="5,5,5,35"
+                            Style="{StaticResource Button}"/>
+                        <avalonedit:TextEditor
+                            x:Name="LuaEditor"
+                            Background="#161616"
+                            BorderBrush="#181818"
+                            BorderThickness="0"
+                            Margin="40,5,5,5"
+                            HorizontalScrollBarVisibility="Disabled"
+                            VerticalScrollBarVisibility="Disabled">
+                            <avalonedit:TextEditor.Style>
+                                <Style>
+                                    <Style.Resources>
+                                        <Style
+                                            TargetType="{x:Type Border}">
+                                            <Setter
+                                                Property="CornerRadius"
+                                                Value="5"/>
+                                        </Style>
+                                    </Style.Resources>
+                                </Style>
+                            </avalonedit:TextEditor.Style>
+                        </avalonedit:TextEditor>
+                    </Grid>
+                </Grid>
             </Border>
         </Grid>
     </Border>
