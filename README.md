@@ -4,6 +4,9 @@
 - Added Registry
 - Added MultiAPI
 
+# Fixed
+- Patched Registry Settings due to boolean duplication.
+
 # To be added
 - Pre-built UI for everyone
 - Settings through registry
