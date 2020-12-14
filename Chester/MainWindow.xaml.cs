@@ -30,17 +30,19 @@ namespace Chester
                 catch (Exception ex)
                 {
                     var Result = MessageBox.Show(
-                        "Everest has encountered an error while loading Themes. Would you like to copy the exception?",
-                        "Everest - Exception",
+                        "Chester has encountered an error while loading Themes. Would you like to copy the exception?",
+                        "Chester - Exception",
                         MessageBoxButton.YesNo,
                         MessageBoxImage.Error);
 
-                    if (Result != MessageBoxResult.Yes) return;
+                    if (Result != MessageBoxResult.Yes) Environment.Exit(0);
                     else { Clipboard.SetText(ex.ToString()); Environment.Exit(0); }
                 }
             }
 
             if (!Settings.Instance.TopMost) this.Topmost = false;
+
+            MultiApi.ApiExecute("", 0);
         }
     }
 }

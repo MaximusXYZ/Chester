@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="Extensions\Data.cs" />
     <Compile Include="Extensions\Manager.cs" />
+    <Compile Include="Extensions\MultiAPI.cs" />
     <Compile Include="Extensions\Settings.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

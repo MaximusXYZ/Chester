@@ -34,4 +34,26 @@ class Settings
 		}
 		set => Key.SetValue("TopMost", value);
 	}
+
+	public bool ShadowCheats
+	{
+		get
+		{
+			if (!Key.GetValueNames().Contains("ShadowCheats")) this.Key.SetValue("ShadowCheats", true);
+
+			return Convert.ToBoolean(this.Key.GetValue("ShadowCheats"));
+		}
+		set => Key.SetValue("ShadowCheats", value);
+	}
+
+	public bool EasyExploits
+	{
+		get
+		{
+			if (!Key.GetValueNames().Contains("ShadowCheats")) this.Key.SetValue("ShadowCheats", false);
+
+			return Convert.ToBoolean(this.Key.GetValue("ShadowCheats"));
+		}
+		set => Key.SetValue("ShadowCheats", value);
+	}
 }
