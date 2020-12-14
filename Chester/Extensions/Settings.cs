@@ -50,10 +50,10 @@ class Settings
 	{
 		get
 		{
-			if (!Key.GetValueNames().Contains("ShadowCheats")) this.Key.SetValue("ShadowCheats", false);
+			if (!Key.GetValueNames().Contains("EasyExploits")) this.Key.SetValue("EasyExploits", false);
 
-			return Convert.ToBoolean(this.Key.GetValue("ShadowCheats"));
+			return Convert.ToBoolean(this.Key.GetValue("EasyExploits"));
 		}
-		set => Key.SetValue("ShadowCheats", value);
+		set => Key.SetValue("EasyExploits", value);
 	}
 }
