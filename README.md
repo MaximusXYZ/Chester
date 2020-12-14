@@ -13,3 +13,6 @@
 - Auto Execute
 - Auto Attach (ProcessWatcher included)
 - Etc...
+
+# Note
+- This is an open source project, Please do not release it with obfuscation.
