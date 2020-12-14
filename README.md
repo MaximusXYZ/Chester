@@ -14,5 +14,5 @@
 - Auto Attach (ProcessWatcher included)
 - Etc...
 
-# Note
+# For Retards
 - This is an open source project, Please do not release it with obfuscation.
