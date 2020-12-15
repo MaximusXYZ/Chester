@@ -1,0 +1,85 @@
+{
+  "MainWindow": {
+    "Title": "Chester - MainWindow",
+    "Background": {
+      "Background": "#FF141414",
+      "BorderBrush": "#0000FFFF",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "TopBorder": {
+      "Background": "#FF141414",
+      "BorderBrush": "#0000FFFF",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "ExitBtn": {
+      "Background": "#FFFF605C",
+      "BorderBrush": "#0000FFFF",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "MinimizeBtn": {
+      "Background": "#FFFFBD44",
+      "BorderBrush": "#0000FFFF",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "MaximizerBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "ExecuteBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "ClearBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "OpenBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "SaveBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "AttachBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "SettingsBtn": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    },
+    "LuaEditor": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0,
+      "FontFamily": "Consolas",
+      "Foreground": "#FFFFFFFF"
+    },
+    "ScriptList": {
+      "Background": "#FF161616",
+      "BorderBrush": "#FF181818",
+      "BorderThickness": "0,0,0,0",
+      "Opacity": 1.0
+    }
+  }
+}
