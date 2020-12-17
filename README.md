@@ -1,17 +1,14 @@
+# Walkthrough
+What is Chester? It is an open source UI developed by ``Nino Nakano#0001`` and ready to build project.  
+How do I get myself updated? You can join our discord by clicking [me.](https://discord.gg/Qwv73gBUZu)  
+
 # Changelogs
-- Added ThemeInterface
-- Added Resizable Window
-- Added Registry
-- Added MultiAPI
-- Added PreBuilt UI
+- Added ThemeInterface  
+```csharp
+Manager.GetMain = JsonConvert.DeserializeObject<Data.Main>(File.ReadAllText("user-data.json"));
+var Main = Manager.GetMain.MainWindow;
 
-# Fixed
-- Patched Registry Settings due to boolean duplication.
+Data.ApplyBorder(Background, Main.Background);
 
-# To be added
-- Auto Execute
-- Auto Attach (ProcessWatcher included)
-- Etc...
-
-# For Retards
-- This is an open source project, Please do not release it with obfuscation.
+//Note that ApplyThemes are currently disabled for upcoming image support.
+```
