@@ -33,4 +33,4 @@ if (Settings.Instance.Topmost == true) this.Topmost = true;
 - And more
 
 # Important
-Please join our server and boost our server to show your support to me, Also credit me as I am doing this for people and to be known also.
+I did not make the syntax highlighting but I found it somewhere in the internet.
