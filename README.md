@@ -33,4 +33,6 @@ if (Settings.Instance.Topmost == true) this.Topmost = true;
 - And more
 
 # Important
-I did not make the syntax highlighting but I found it somewhere in the internet.
+I did not make the syntax highlighting but I found it somewhere in the internet, However I did modify it and added most of the keywords.
+
+- Discontinued
