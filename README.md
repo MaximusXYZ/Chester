@@ -14,7 +14,7 @@ Data.ApplyBorder(Background, Main.Background);
 ```
 - Registry Settings↴  
 ```csharp
-this.Topmost = Settings.Instance.Topmost 
+this.Topmost = Settings.Instance.Topmost;
 ```
 - Main UI
 - Custom Styles
