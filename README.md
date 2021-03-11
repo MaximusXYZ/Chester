@@ -14,10 +14,7 @@ Data.ApplyBorder(Background, Main.Background);
 ```
 - Registry Settings↴  
 ```csharp
-if (Settings.Instance.Topmost == true) this.Topmost = true;
-
-//Note that this update is not pushed yet because I'm currently busy.
-//Also this code can be put at Loaded event or after InitializedComponent.
+this.Topmost = Settings.Instance.Topmost 
 ```
 - Main UI
 - Custom Styles
